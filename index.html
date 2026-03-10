@@ -13,13 +13,19 @@
             margin-left: 46%;
         }
 
+        body{
+            background-image: url('https://media.istockphoto.com/id/1561104545/photo/green-energy-in-full-development-increase-in-electricity-prices-on-the-world-market.jpg?s=612x612&w=0&k=20&c=j_PkXGQwdfYWGvAb9pPvAgC5aM-c_O4m-Iml2fWSmoU=');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
     </style>
 
 <body>
 
     <br><br><br><br><br><br><br><br>
     
-    <h1 class="text-center">Electricity Consumption Classifier</h1><br>
+    <h1 class="text-center text-light">Electricity Consumption Classifier</h1><br>
 
     <input type="text" class="form-control" id="Age" placeholder="Input your energy consumption rate..." size="50"><br>
 
@@ -52,7 +58,9 @@
             else if(kWh >= 501){
                 alert(cat5 + ": You are a heavy electricity user.");
             }
-            else{}
+            else{
+                alert("Input invalid. Unable to identify electricity consumption class")
+            }
 
         }
 
