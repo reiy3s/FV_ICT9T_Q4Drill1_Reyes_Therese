@@ -7,6 +7,41 @@
     <title>Document</title>
 </head>
 <body>
+  <input type="text" class="form-control" id="Age" placeholder="type in yo REAL age cutie"><br>
+
+    <button class="btn btn-info" onclick="checkAge()">Check</button>
+
+    <script>
+
+        function checkAge(){
+        var kWh = document.getElementById("Age").value;
+        let cat1 = "Lifeline Consumer";
+        let cat2 = "Low Consumption";
+        let cat3 = "Average Consumption";
+        let cat4 = "High Consumption";
+        let cat5 = "Very High Consumption";
+            if (isNaN(kWh)) || (kWh < 0){ 
+                alert("Please input a valid number");
+            }
+        
+            else if(kWh <= 100){
+                alert(A + ": You have a discounted rate.");
+            }
+
+            else if (Age<18){
+                alert("u r a minor LOSER U CANT DO NUTHING")
+            }
+
+            else if(Age>18){
+                alert("okay ur old enough baby boo");
+            }
+
+            else{
+                alert("man i dunno know how old u are u dino fossil");
+            }
+        }
+
+    </script>
     
 </body>
 </html>
