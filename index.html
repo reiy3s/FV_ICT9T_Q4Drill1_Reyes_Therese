@@ -10,7 +10,7 @@
 
     <h1>Electricity Consumption Classifier</h1>
 
-    <input type="text" class="form-control" id="Age" placeholder="type in yo REAL age cutie"><br>
+    <input type="text" class="form-control" id="Age" placeholder="Input your energy consumption rate..."><br>
 
     <button class="btn btn-info" onclick="checkAge()">Check</button>
 
@@ -28,6 +28,18 @@
             }
             else if(kWh <= 100){
                 alert(cat1 + ": You have a discounted rate.");
+            }
+            else if((kWh >= 101) && (kWh<=200)){
+                alert(cat2 + ": You have a normal residential rate.");
+            }
+            else if((kWh >= 201) && (kWh<=300)){
+                alert(cat3 + ": You have a typical electricity usage.");
+            }
+            else if((kWh >= 301) && (kWh<=500)){
+                alert(cat4 + ": You have a higher electricity usage.");
+            }
+            else if(kWh >= 501){
+                alert(cat5 + ": You are a heavy electricity user.");
             }
             else{}
 
